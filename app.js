@@ -1,9 +1,14 @@
 var game = new Game();
-
+var music = new Audio("skrillex.mp3");
 let blastMusic = document.getElementById("music");
 blastMusic.addEventListener("click", function () {
-  let music = new Audio("skrillex.mp3");
   music.play();
+});
+
+let stopMusic = document.getElementById("stop");
+stopMusic.addEventListener("click", function () {
+  music.pause();
+  music.currentTime = 0; //stops and resets the music
 });
 
 function drawShape() {
