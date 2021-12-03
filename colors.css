@@ -3,10 +3,42 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
 }
-.glow {
+
+h2 {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+number {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+.glowstage1 {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px turquoise,
     0 0 82px turquoise, 0 0 92px turquoise, 0 0 102px turquoise,
     0 0 151px turquoise;
+}
+
+.glowstage2 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px blue,
+    0 0 82px blue, 0 0 92px blue, 0 0 102px blue, 0 0 151px blue;
+}
+
+.glowstage3 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px purple,
+    0 0 82px purple, 0 0 92px purple, 0 0 102px purple, 0 0 151px purple;
+}
+
+.glowstage4 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px magenta,
+    0 0 82px magenta, 0 0 92px magenta, 0 0 102px magenta, 0 0 151px magenta;
+}
+
+.glowstage5 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px red,
+    0 0 82px red, 0 0 92px red, 0 0 102px red, 0 0 151px red;
 }
 
 body {
