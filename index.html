@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="colors.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="colors.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CS 240 Final Project</title>
-</head>
-<body>
-  <div>
-    <h1 class = "glowstage1">DATA FOR MATHEMATICAL PROGRAM</h1>
-  </div>
-  <div id = "presentRound">
-    <h2 class = "glowstage1">Round <number id = "level">1</number></h2>
-  </div>
-  <div>
-  <button id = "music">
-    ▶️
-  </button>
+  </head>
+  <body>
+    <div>
+      <h1 class="glowstage1" id="title">DATA FOR MATHEMATICAL PROGRAM</h1>
+    </div>
+    <div id="presentRound">
+      <h2 class="glowstage1" id="colorOfRounds">
+        Round <number id="level">1</number>
+      </h2>
+    </div>
+    <div>
+      <button id="music">▶️</button>
 
-  <button id = "stop">
-    ⏹
-  </button>
+      <button id="stop">⏹</button>
 
-  <button id = "nextRound">
-    nextBackground
-  </button>
-  </div>
-  
-  <div class = "image2">
-    <canvas id = "rectangle" width="350" height = "400" style = "border:1px solid #30D5C8"></canvas>
-  </div>
+      <button id="nextRound">nextBackground</button>
+    </div>
+
+    <div class="image2">
+      <canvas
+        id="rectangle"
+        width="350"
+        height="400"
+        style="border: 1px solid #30d5c8"
+      ></canvas>
+    </div>
     <script src="node_modules/matter-js/build/matter.js"></script>
     <script src="game.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
-
