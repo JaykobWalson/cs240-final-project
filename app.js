@@ -2,6 +2,7 @@ var game = new Game();
 var music = new Audio("Shiny Tech III.mp3");
 var musicPlaying = false;
 var stage = 1;
+console.log(stage);
 var round = parseInt(document.getElementById("level").innerHTML);
 let blastMusic = document.getElementById("music");
 var colors = [];
@@ -25,24 +26,45 @@ blastMusic.addEventListener("click", function () {
 let advanceRounds = document.getElementById("nextRound");
 advanceRounds.addEventListener("click", function () {
   round++;
+  stage++;
+  // console.log(stage);
+  // document.getElementById("level").innerHTML = round;
+  // document.getElementById("level").classList.add("glowstage" + stage);
+  // document.getElementById("title").classList.add("glowstage" + stage);
+  // document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
   document.getElementById("level").innerHTML = round;
   document.getElementById("level").classList.add("glowstage" + stage);
   document.getElementById("title").classList.add("glowstage" + stage);
-  this.classList.clear;
   document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
-  console.log(stage);
-  if (true) {
+  // console.log(stage);
+  if (stage % 5 == 0) {
+    document.getElementById("level").innerHTML = round;
+    document.getElementById("level").classList.add("glowstage" + 5);
+    document.getElementById("title").classList.add("glowstage" + 5);
+    document.getElementById("colorOfRounds").classList.add("glowstage" + 5);
+    // for (let i = 1; i <= 5; i++) {
+    //   document.getElementById("level").classList.remove("glowstage" + stage);
+    //   document.getElementById("title").classList.remove("glowstage" + stage);
+    //   document
+    //     .getElementById("colorOfRounds")
+    //     .classList.remove("glowstage" + stage);
+    // }
+  }
+  if (stage > 5 && stage % 5 == 1) {
+    stage = 1;
+    for (let i = 1; i <= 5; i++) {
+      document.getElementById("level").classList.remove("glowstage" + i);
+      document.getElementById("title").classList.remove("glowstage" + i);
+      document
+        .getElementById("colorOfRounds")
+        .classList.remove("glowstage" + i);
+    }
     document.getElementById("level").innerHTML = round;
     document.getElementById("level").classList.add("glowstage" + stage);
     document.getElementById("title").classList.add("glowstage" + stage);
     document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
-    this.classList.clear;
-    console.log(stage);
-    stage++;
-    if (stage > 5) {
-      stage = 1;
-    }
   }
+
   //if (remainder == 1) {
   // document.getElementById("level").innerHTML = round;
   // document.getElementById("level").classList.add("glowstage" + this.innerHTML);
