@@ -16,47 +16,47 @@ var currentColor = document.getElementsByClassName("glowstage" + round);
 //   }
 // }
 
-let advanceRounds = document.getElementById("nextRound");
-advanceRounds.addEventListener("click", function () {
-  round++;
-  stage++;
-  document.getElementById("level").innerHTML = round;
-  document.getElementById("level").classList.add("glowstage" + stage);
-  document.getElementById("title").classList.add("glowstage" + stage);
-  document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
-  if (stage % 5 == 0) {
-    document.getElementById("level").innerHTML = round;
-    document.getElementById("level").classList.add("glowstage" + 5);
-    document.getElementById("title").classList.add("glowstage" + 5);
-    document.getElementById("colorOfRounds").classList.add("glowstage" + 5);
-  }
-  if (stage > 5 && stage % 5 == 1) {
-    stage = 1;
-    for (let i = 1; i <= 5; i++) {
-      document.getElementById("level").classList.remove("glowstage" + i);
-      document.getElementById("title").classList.remove("glowstage" + i);
-      document
-        .getElementById("colorOfRounds")
-        .classList.remove("glowstage" + i);
-    }
-    document.getElementById("level").innerHTML = round;
-    document.getElementById("level").classList.add("glowstage" + stage);
-    document.getElementById("title").classList.add("glowstage" + stage);
-    document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
-  }
+// let advanceRounds = document.getElementById("nextRound");
+// advanceRounds.addEventListener("click", function () {
+//   round++;
+//   stage++;
+//   document.getElementById("level").innerHTML = round;
+//   document.getElementById("level").classList.add("glowstage" + stage);
+//   document.getElementById("title").classList.add("glowstage" + stage);
+//   document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
+//   if (stage % 5 == 0) {
+//     document.getElementById("level").innerHTML = round;
+//     document.getElementById("level").classList.add("glowstage" + 5);
+//     document.getElementById("title").classList.add("glowstage" + 5);
+//     document.getElementById("colorOfRounds").classList.add("glowstage" + 5);
+//   }
+//   if (stage > 5 && stage % 5 == 1) {
+//     stage = 1;
+//     for (let i = 1; i <= 5; i++) {
+//       document.getElementById("level").classList.remove("glowstage" + i);
+//       document.getElementById("title").classList.remove("glowstage" + i);
+//       document
+//         .getElementById("colorOfRounds")
+//         .classList.remove("glowstage" + i);
+//     }
+//     document.getElementById("level").innerHTML = round;
+//     document.getElementById("level").classList.add("glowstage" + stage);
+//     document.getElementById("title").classList.add("glowstage" + stage);
+//     document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
+//   }
 
-  //if (remainder == 1) {
-  // document.getElementById("level").innerHTML = round;
-  // document.getElementById("level").classList.add("glowstage" + this.innerHTML);
-  // document.getElementById("title").classList.add("glowstage" + stage);
-  // document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
-  // console.log(stage);
-  // stage++;
-  // if (stage > 5) {
-  //   stage = 1;
-  // }
-  //}
-});
+//   //if (remainder == 1) {
+//   // document.getElementById("level").innerHTML = round;
+//   // document.getElementById("level").classList.add("glowstage" + this.innerHTML);
+//   // document.getElementById("title").classList.add("glowstage" + stage);
+//   // document.getElementById("colorOfRounds").classList.add("glowstage" + stage);
+//   // console.log(stage);
+//   // stage++;
+//   // if (stage > 5) {
+//   //   stage = 1;
+//   // }
+//   //}
+// });
 
 addEventListener("keypress", (event) => {
   if (event.key == " " && !game.slingShot.bodyB.velocityPrev) {
