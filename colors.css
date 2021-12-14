@@ -44,11 +44,15 @@ number {
 body {
   background-color: black;
 }
-.image {
-  float: left;
-  padding: right 10%;
-}
-.image2 {
+
+table {
   float: right;
-  padding: left 30px;
+  width: 19%;
+  background-image: url(images/Material\ Texture/Wood/wood-Whole.png);
+  align-items: center;
+  color: black;
+  text-shadow: 2px 2px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1.5vw;
 }
